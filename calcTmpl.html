@@ -1,0 +1,81 @@
+<!--
+ <div class="calculator">
+      <div class="display">{{ value }}</div>
+      <div class="controls">
+        <div class="row">
+          <div ng-click="clear()">C</div>
+          <div ng-click="negate()">+/-</div>
+          <div ng-click="op('/')">/</div>
+          <div ng-click="op('*')">*</div>
+        </div>
+        <div class="row">
+          <div ng-click="num('7')">7</div>
+          <div ng-click="num('8')">8</div>
+          <div ng-click="num('9')">9</div>
+          <div ng-click="op('-')">-</div>
+        </div>
+        <div class="row">
+          <div ng-click="num('4')">4</div>
+          <div ng-click="num('5')">5</div>
+          <div ng-click="num('6')">6</div>
+          <div ng-click="op('+')">+</div>
+        </div>
+        <div class="row double">
+          <div class="tall right" ng-click="compute()">=</div>
+          <div>
+            <div ng-click="num('1')">1</div>
+            <div ng-click="num('2')">2</div>
+            <div ng-click="num('3')">3</div>
+          </div>
+          <div>
+            <div class="wide" ng-click="num('0')">0</div>
+            <div ng-click="num('.')">.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+-->
+    
+   
+  
+ 
+<div class="container ">
+        <div class="calculator_button calculator_button_succes col-lg-1 col-md-1 col-sm-1 col-xs-3"><i class="fa fa-check" aria-hidden="true"></i></div>
+        <div class="row">
+            <div class="calculator col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="result col-lg-4 col-md-4 col-sm-4 col-xs-12">  {{display}} </div>
+                    </div>
+                    <div class="row first_row">
+                        <div class="calculator_button calculator_button_deleteAll col-lg-2 col-md-2 col-sm-2 col-xs-3 " ng-click="clear()"><b>AC</b></div>
+                        <div class="calculator_button calculator_button_backspace col-lg-1 col-md-1 col-sm-1 col-xs-3 " ng-click="backspace(); check()"> <i class="fa fa-long-arrow-left calc_backspace" aria-hidden="true"></i> </div>
+                        <div class="calculator_button calculator_button_divide col-lg-1 col-md-1 col-sm-1 col-xs-3 " ng-click="op('/')"><b>/</b></div>
+                    </div>
+                    <div class="row ">
+                        <div class="calculator_button calculator_button1 col-lg-1 col-md-1 col-sm-1 col-xs-3" ng-click="clearInputFunc();num('1'); ">1</div>
+                        <div class="calculator_button calculator_button2 col-lg-1 col-md-1 col-sm-1 col-xs-3" ng-click="clearInputFunc();num('2')">2</div>
+                        <div class="calculator_button calculator_button3 col-lg-1 col-md-1 col-sm-1 col-xs-3" ng-click="clearInputFunc();num('3')">3</div>
+                        <div class="calculator_button calculator_button_multiply col-lg-1 col-md-1 col-sm-1 col-xs-3" ng-click="op('*')"><b>*</b></div>
+                    </div>
+                    <div class="row">
+                        <div class="calculator_button calculator_button4 col-lg-1 col-md-1 col-sm-1 col-xs-3" ng-click="clearInputFunc();num('4')">4</div>
+                        <div class="calculator_button calculator_button5 col-lg-1 col-md-1 col-sm-1 col-xs-3" ng-click="clearInputFunc();num('5')">5</div>
+                        <div class="calculator_button calculator_button6 col-lg-1 col-md-1 col-sm-1 col-xs-3" ng-click="clearInputFunc();num('6')">6</div>
+                        <div class="calculator_button calculator_button_minus col-lg-1 col-md-1 col-sm-1 col-xs-3" ng-click="op('-')"><b>-</b></div>
+                    </div>
+                    <div class="row">
+                        <div class="calculator_button calculator_button7 col-lg-1 col-md-1 col-sm-1 col-xs-3  " ng-click="clearInputFunc();num('7')">7</div>
+                        <div class="calculator_button calculator_button8 col-lg-1 col-md-1 col-sm-1 col-xs-3 " ng-click="clearInputFunc();num('8')">8</div>
+                        <div class="calculator_button calculator_button9 col-lg-1 col-md-1 col-sm-1 col-xs-3 " ng-click="clearInputFunc();num('9')">9</div>
+                        <div class="calculator_button calculator_button_plus col-lg-1 col-md-1 col-sm-1 col-xs-3 " ng-click="op('+')"><b>+</b></div>
+                    </div>
+                    <div class="row">
+                        <div class="calculator_button calculator_button0 col-lg-2 col-md-2 col-sm-2 col-xs-6 " ng-click="clearInputFunc();num('0')">0</div>
+                        <div class="calculator_button calculator_button_koma col-lg-1 col-md-1 col-sm-1 col-xs-3 " ng-click="num('.')">,</div>
+                        <div class="calculator_button calculator_button_succes col-lg-1 col-md-1 col-sm-1 col-xs-3 " ng-click="compute()"><b>=</b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

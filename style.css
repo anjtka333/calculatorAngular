@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300i');
+.calculator {
+    background-color: #ffffff;
+    box-shadow: 0 0 60px 0 rgba(109, 106, 98, 0.3);
+    padding: 61px 0 28px 0;
+}
+
+.result {
+    background-color: #62d08f;
+    height: 114px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38.3px;
+    font-weight: 300;
+    color: white;
+    text-align: right;
+}
+
+.calculator_button {
+    padding: 37px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38.3px;
+    font-weight: 300;
+    line-height: 0.75;
+    text-align: center;
+    color: dimgray;
+}
+.calc_backspace{
+        font-size: 34px !important;
+}
+.calculator_button_deleteAll{
+    
+    color: #fa98a1
+}
+.calculator_button_backspace{
+    padding: 34px
+}
+.calculator_button_divide{
+        font-size: 24px;
+}
+.calculator_button:hover {
+    color: white;
+    background-color: #62d08f;
+}
+.calculator_button_koma{
+  font-size: 50px;  
+}
+
+.first_row {
+    margin-top: 86px
+}
+
+@media (min-width: 320px) and (max-width: 736px) {
+    .calculator {
+        padding: 10px 0 10px 0;
+    }
+    .first_row {
+        margin-top: 16px
+    }
+    
+    .calculator_button {
+    padding: 27px;
+    
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .calculator {
+        padding: 10px 0 10px 0;
+    }
+    .first_row {
+        margin-top: 16px
+    }
+     .calculator_button {
+    padding: 27px;
+    
+}
+}
+
+@media (max-width: 1180px) and (min-width: 991px) {
+    .calculator {
+        padding: 10px 0 10px 0;
+    }
+}
